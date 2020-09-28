@@ -1,0 +1,36 @@
+$pfx: "login-page";
+
+.#{$pfx} {
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+
+        &-col {
+            margin-right: 220px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__form {
+        text-align: center;
+    }
+    
+    &__title {
+        margin: 40px 0;
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
+}
