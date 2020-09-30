@@ -1,0 +1,186 @@
+$pfx: "header";
+
+.#{$pfx} {
+    padding: 0px 40px;
+    box-shadow: 0px 4px 20px rgba(122, 128, 131, 0.17);
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+
+        &-col {
+            &:nth-of-type(1) {
+                display: flex;
+                margin-right: 12px;
+            }
+
+            &:nth-of-type(2) {
+                margin-right: 12px;
+            }
+
+        }
+    }
+
+    &__logo {
+        display: block;
+        margin-right: 55px;
+    }
+
+    &__search {
+        margin-right: 12px;
+
+        input {
+            height: 44px;
+            background-color: #F9F9FF;
+            background-image: url(/img/svg/search.svg);
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            border-radius: 10px;
+            border: 1px solid #F9F9FF;
+            width: 278px;
+            padding-left: 40px;
+
+            &::-webkit-input-placeholder {
+                color: #babdd8;
+            }
+
+            &::-moz-placeholder {
+                color: #babdd8;
+            }
+
+            &:-moz-placeholder {
+                color: #babdd8;
+            }
+
+            &:-ms-input-placeholder {
+                color: #babdd8;
+            }
+
+            &::-webkit-search-decoration,
+            &::-webkit-search-cancel-button,
+            &::-webkit-search-results-button,
+            &::-webkit-search-results-decoration {
+                display: none;
+            }
+
+            &:focus {
+                color: $accent;
+                border-color: $accent;
+            }
+        }
+    }
+
+    &__add {
+        height: 44px;
+        line-height: 44px;
+        background: $accent;
+        border: 0;
+        color: white;
+        padding: 0 30px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all .2s;
+
+        img {
+            margin-left: 5px;
+        }
+
+        &:hover {
+            background: $hover;
+            transition: all .2s;
+        }
+
+        &:active {
+            background: $press;
+            transition: all .2s;
+        }
+    }
+
+    &__nav {
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: $gray;
+                    position: relative;
+                    height: 90px;
+                    line-height: 90px;
+                    display: block;
+
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+
+                &.current {
+                    a {
+                        color: $accent;
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            background: $accent;
+                            left: 0;
+                            right: 0;
+                            bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__lang {
+        color: $gray;
+        position: relative;
+
+        &-parrent {
+            cursor: pointer;
+
+            svg {
+                transition: all .2s;
+                position: relative;
+            }
+
+            &:hover {
+                color: $text;
+
+                svg {
+                    transition: all .2s;
+                    position: relative;
+
+                    path {
+                        fill: $text;
+                    }
+                }
+            }
+        }
+
+        &.open {
+            color: $text;
+
+            svg {
+                top: 2px;
+                transform: rotate(180deg);
+                transition: all .2s;
+
+                path {
+                    fill: $text;
+                }
+            }
+        }
+    }
+}

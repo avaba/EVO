@@ -1,0 +1,60 @@
+$pfx: "form-input";
+
+.#{$pfx} {
+    text-align: left;
+    margin-bottom: 15px;
+
+    label {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    &__label {
+        display: block;
+    }
+
+    input {
+        width: 100%;
+        display: block;
+        height: 27px;
+        line-height: 27px;
+        border: 0;
+        padding: 0;
+        border-bottom: 1.5px solid $border;
+        transition: all .3s;
+
+        &:focus {
+            outline: 0;
+            color: $accent;
+            border-bottom-color: $accent;
+            transition: all .3s;
+        }
+    }
+
+    &.error {
+        input {
+            color: $red;
+            border-color: $red;
+        }
+
+        .error__item {
+            color: $red;
+            position: relative;
+            padding-left: 20px;
+            font-size: 12px;
+            line-height: 15px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 14px;
+                height: 14px;
+                background: url(/img/svg/error.svg) no-repeat;
+                background-position: center;
+            }
+        }
+    }
+}

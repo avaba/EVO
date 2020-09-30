@@ -1,0 +1,61 @@
+$pfx: "box";
+
+.#{$pfx} {
+    position: relative;
+
+    &__hide {
+        position: absolute;
+        box-shadow: 0px 0px 8px rgba(206, 207, 226, 0.41);
+        border-radius: 8px;
+        background: white;
+        right: -15px;
+        top: 100%;
+        margin-top: 10px;
+        white-space: nowrap;
+        display: none;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -28px;
+            right: 14px;
+            background: white;
+            border: 7px solid transparent;
+            transform: rotate(45deg) translateX(15px) translateY(15px);
+            box-shadow: 0px 0px 8px rgba(206, 207, 226, 0.41);
+        }
+
+        ul {
+            list-style: none;
+            padding: 10px 16px;
+            margin: 0;
+            background: white;
+            position: relative;
+
+            li {
+                a {
+                    font-size: 14px;
+                    line-height: 30px;
+                    display: block;
+                    color: $text;
+
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+
+                &.current {
+                    a {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+    }
+
+    &.open {
+        .#{$pfx}__hide {
+            display: block;
+        }
+    }
+}

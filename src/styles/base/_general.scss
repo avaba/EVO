@@ -2,6 +2,8 @@ body {
     font-family: 'Gilroy';
     font-size: 15px;
     min-width: 320px;
+    letter-spacing: 0.5px;
+    color: $text;
 }
 
 h1,
@@ -24,6 +26,18 @@ a {
 
     &:hover {
         text-decoration: none;
+    }
+}
+
+input {
+    &:focus {
+        outline: 0;
+    }
+}
+
+button {
+    &:focus {
+        outline: 0;
     }
 }
 

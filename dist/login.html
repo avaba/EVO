@@ -24,11 +24,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    
     <div class="login-page">
         <div class="login-page__wrap">
             <div class="login-page__wrap-col">
@@ -51,13 +50,28 @@
                                 <input name="login" type="password">
                             </label>
                         </div>
+                        <!-- Неправильный логин или пароль .error -->
+                        <div class="form-input error" style="display: none;">
+                            <label>
+                                <span class="form-input__label">Логин</span>
+                                <input name="login" value="Введён неправильный логин пароль " type="text" autocomplete="off">
+                                <span class="error__item">Неправильный логин или пароль</span>
+                            </label>
+                        </div>
+                        <!-- Неправильный логин или пароль -->
+                        <button class="form-button">Войти</button>
+                        <div class="form-checkbox">
+                            <label>
+                                <input type="checkbox">
+                                <span>Запомнить</span>
+                            </label>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
