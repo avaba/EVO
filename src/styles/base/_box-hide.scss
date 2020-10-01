@@ -3,6 +3,30 @@ $pfx: "box";
 .#{$pfx} {
     position: relative;
 
+    &__link {
+        cursor: pointer;
+
+        svg {
+            display: inline-block;
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: $hover;
+                }
+            }
+        }
+
+        &:active {
+            svg {
+                path {
+                    fill: $press;
+                }
+            }
+        }
+    }
+
     &__hide {
         position: absolute;
         box-shadow: 0px 0px 8px rgba(206, 207, 226, 0.41);
@@ -33,20 +57,47 @@ $pfx: "box";
             position: relative;
 
             li {
-                a {
-                    font-size: 14px;
-                    line-height: 30px;
-                    display: block;
-                    color: $text;
-
-                    &:hover {
-                        color: $accent;
-                    }
-                }
-
                 &.current {
                     a {
                         color: $accent;
+
+                        svg {
+                            path {
+                                fill: $accent;
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    font-size: 14px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: $text;
+
+                    svg {
+                        margin-right: 8px;
+                    }
+
+                    &:hover {
+                        color: $accent;
+
+                        svg {
+                            path {
+                                fill: $accent;
+                            }
+                        }
+                    }
+
+                    &:active {
+                        color: $press;
+
+                        svg {
+                            path {
+                                fill: $press;
+                            }
+                        }
                     }
                 }
             }
@@ -56,6 +107,30 @@ $pfx: "box";
     &.open {
         .#{$pfx}__hide {
             display: block;
+        }
+    }
+
+    &-add {
+        .#{$pfx}__hide {
+            right: 0;
+        }
+    }
+
+    &-setting {
+        .#{$pfx}__link {
+            svg {
+                display: block;
+            }
+        }
+
+        .#{$pfx}__hide {
+            right: -11px;
+        }
+    }
+
+    &-user {
+        .#{$pfx}__hide {
+            right: 0px;
         }
     }
 }

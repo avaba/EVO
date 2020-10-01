@@ -458,6 +458,10 @@ button:focus {
   margin: 100px 0;
 }
 
+#site {
+  position: relative;
+}
+
 .form-input {
   text-align: left;
   margin-bottom: 15px;
@@ -607,6 +611,22 @@ button:focus {
   position: relative;
 }
 
+.box__link {
+  cursor: pointer;
+}
+
+.box__link svg {
+  display: inline-block;
+}
+
+.box__link:hover svg path {
+  fill: #6D89FF;
+}
+
+.box__link:active svg path {
+  fill: #1F46EF;
+}
+
 .box__hide {
   position: absolute;
   box-shadow: 0px 0px 8px rgba(206, 207, 226, 0.41);
@@ -638,31 +658,79 @@ button:focus {
   position: relative;
 }
 
+.box__hide ul li.current a {
+  color: #496BFF;
+}
+
+.box__hide ul li.current a svg path {
+  fill: #496BFF;
+}
+
 .box__hide ul li a {
   font-size: 14px;
   line-height: 30px;
-  display: block;
+  display: flex;
+  align-items: center;
   color: #2F3357;
+}
+
+.box__hide ul li a svg {
+  margin-right: 8px;
 }
 
 .box__hide ul li a:hover {
   color: #496BFF;
 }
 
-.box__hide ul li.current a {
-  color: #496BFF;
+.box__hide ul li a:hover svg path {
+  fill: #496BFF;
+}
+
+.box__hide ul li a:active {
+  color: #1F46EF;
+}
+
+.box__hide ul li a:active svg path {
+  fill: #1F46EF;
 }
 
 .box.open .box__hide {
   display: block;
 }
 
+.box-add .box__hide {
+  right: 0;
+}
+
+.box-setting .box__link svg {
+  display: block;
+}
+
+.box-setting .box__hide {
+  right: -11px;
+}
+
+.box-user .box__hide {
+  right: 0px;
+}
+
 .header {
   padding: 0px 40px;
   box-shadow: 0px 4px 20px rgba(122, 128, 131, 0.17);
+  background: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
 .header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__wrap-col {
   display: flex;
   align-items: center;
 }
@@ -797,6 +865,7 @@ button:focus {
 .header__lang {
   color: #939ba1;
   position: relative;
+  margin-right: 20px;
 }
 
 .header__lang-parrent {
@@ -833,6 +902,37 @@ button:focus {
 
 .header__lang.open svg path {
   fill: #2F3357;
+}
+
+.header__setting {
+  margin-right: 20px;
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+}
+
+.header__user-img {
+  border-radius: 8px;
+  height: 44px;
+  width: 44px;
+  display: block;
+}
+
+.header__user_text {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.header__user_text-name {
+  font-weight: bold;
+}
+
+.header__user_text-prof {
+  color: #636478;
 }
 
 .login-page {
