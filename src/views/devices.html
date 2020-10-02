@@ -29,12 +29,46 @@
 
 <body>
     @@include("../blocks/modules/header/header.html")
-    <div class="main-page">
-        <div class="container">
-            <h1>EVO controls</h1>
-            <ul>
-                <li><a href="/login.html">Вход</a></li>
-            </ul>
+    <div class="head-page">
+        <div class="head-page__title">
+            <h1>Устройства</h1>
+        </div>
+        <div class="head-page__btn">
+            <div class="head-page__btn-col">
+                @@include("../blocks/modules/btn-group/btn-group.html")
+            </div>
+            <div class="head-page__btn-col">
+                @@include("../blocks/modules/export/export.html")
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll">
+        <div class="scroll__block">
+            <div class="scroll__wrap">
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+            </div>
+            <div class="scroll__wrap">
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+            </div>
+            <div class="scroll__wrap">
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+                <div class="scroll__item">@@include("../blocks/modules/product/product.html")</div>
+            </div>
         </div>
     </div>
     @@include("../blocks/modules/footer/footer.html")

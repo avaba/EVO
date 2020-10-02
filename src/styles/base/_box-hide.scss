@@ -36,6 +36,7 @@ $pfx: "box";
         top: 100%;
         margin-top: 10px;
         white-space: nowrap;
+        z-index: 10;
         display: none;
 
         &:before {
@@ -131,6 +132,13 @@ $pfx: "box";
     &-user {
         .#{$pfx}__hide {
             right: 0px;
+        }
+    }
+
+    &.export {
+        .#{$pfx}__hide {
+            right: 0px;
+            margin-top: 15px;
         }
     }
 }

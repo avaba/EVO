@@ -52,4 +52,72 @@ button {
 
 #site {
     position: relative;
+    padding-top: 90px;
+}
+
+.head-page {
+    margin: 42px 40px 36px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+            line-height: 42px;
+        }
+    }
+
+    &__btn {
+        display: flex;
+
+        &-col {
+            margin-left: 24px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.scroll {
+    padding-left: 40px;
+
+    &__wrap {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 30px;
+        margin-top: -30px;
+    }
+
+    &__item {
+        -ms-flex: 0 0 506px;
+        flex: 0 0 506px;
+        max-width: 506px;
+        margin-right: 22px;
+        margin-bottom: 22px;
+
+        &:last-child {
+            margin-right: 0;
+            padding-right: 40px;
+        }
+    }
+}
+
+.mCSB_draggerContainer:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    top: 50%;
+    background: #eee;
+    margin-top: -1px;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    right: 40px !important;
 }

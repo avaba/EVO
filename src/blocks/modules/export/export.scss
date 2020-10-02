@@ -1,0 +1,31 @@
+$pfx: "export";
+
+.#{$pfx} {
+
+    .box__link {
+        border: 1px solid $border-light;
+        padding: 8px;
+        border-radius: 6px;
+    }
+
+    svg {
+        display: block;
+    }
+
+    &.open {
+        .box__link {
+            background: $accent;
+            border-color: $accent;
+
+            svg {
+                path {
+                    fill: white;
+                }
+
+                rect {
+                    fill: white;
+                }
+            }
+        }
+    }
+}

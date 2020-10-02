@@ -1,0 +1,30 @@
+$pfx: "btn-group";
+
+.#{$pfx} {
+    border: 1px solid $border-light;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+
+    &__item {
+        display: inline-block;
+        margin: 8px;
+        padding: 0;
+        border: 0;
+        background: none;
+        cursor: pointer;
+
+        svg {
+            display: block;
+        }
+
+        &:hover, &.current {
+            svg {
+                path, rect {
+                    fill: $accent;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
