@@ -114,6 +114,40 @@ $pfx: "box";
     &-add {
         .#{$pfx}__hide {
             right: 0;
+            left: 0;
+            margin-top: 12px;
+
+            &::before {
+                display: none;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 5px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    a {
+                        padding-left: 25px;
+                        position: relative;
+
+                        svg {
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+
+                        &:hover {
+                            svg path#stroke {
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

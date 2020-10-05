@@ -1,0 +1,120 @@
+.owner {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid $border-light;
+        border-radius: 8px 8px 0px 0px;
+        padding: 12px 20px;
+        margin: 0 !important;
+    }
+
+    &__list {
+        border: 1px solid $border-light;
+        border-radius: 0px 0px 8px 8px;
+        margin-top: -1px;
+        max-height: 340px;
+        overflow: auto;
+
+        &::-webkit-scrollbar-button {
+            width: 4px;
+            height: 0px
+        }
+    
+        &::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: $border-light;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    
+        &::-webkit-resizer {
+            width: 4px;
+            height: 0px
+        }
+    
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+    }
+
+    &__items {
+        font-size: 14px;
+        padding: 9px 16px;
+        display: block;
+        cursor: pointer;
+
+        input {
+            display: none;
+
+            &:checked+.owner__items-item {
+                .check {
+                    border-color: $accent;
+                    transition: all .2s;
+
+                    &:after {
+                        opacity: 1;
+                        transition: all .2s;
+                    }
+                }
+            }
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: relative;
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 100px;
+                background: #eee;
+                margin-left: 12px;
+            }
+
+            &.checkbox-user {
+                &:after {
+                    background: #4CB9F7;
+                }
+            }
+
+            &.checkbox-admin {
+                &:after {
+                    background: #FFC759;
+                }
+            }
+
+            .check {
+                border: 1px solid $border-light;
+                box-sizing: border-box;
+                border-radius: 3px;
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                margin-left: auto;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    left: -1px;
+                    top: -1px;
+                    background: url('/img/svg/check.svg') no-repeat;
+                    background-position: center;
+                    opacity: 0;
+                    transition: all .2s;
+                }
+            }
+        }
+    }
+}

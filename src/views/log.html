@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    @@include("../blocks/modules/header/header.html")
+    <div class="head-page">
+        <div class="head-page__title">
+            <h1>Лог действий</h1>
+        </div>
+        <div class="head-page__btn">
+            <div class="head-page__btn-col">
+                @@include("../blocks/modules/export/export.html")
+            </div>
+        </div>
+    </div>
+
+    <div class="log">
+        <div class="log-filter">
+            <div class="log-filter__wrap">
+                <div class="log-filter__wrap-col">
+                    <div class="header__search">
+                        <input name="search" type="text" placeholder="Поиск по слову" autocomplete="off">
+                    </div>
+                </div>
+                <div class="log-filter__wrap-col">
+                    <div class="log-filter__btn">
+                        <button class="btn btn-svg"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.93325 4.13301C3.68604 3.80339 3.92123 3.33301 4.33325 3.33301H15.6666C16.0786 3.33301 16.3138 3.80339 16.0666 4.13301L11.6666 9.99968V16.6907C11.6666 17.0624 11.2754 17.3041 10.943 17.1379L8.33325 15.833V9.99968L3.93325 4.13301Z" fill="white"/>
+                            </svg> Фильтровать</button>
+                        <button class="btn btn-svg btn-clear"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10ZM3.99342 10C3.99342 13.3173 6.68266 16.0066 10 16.0066C13.3173 16.0066 16.0066 13.3173 16.0066 10C16.0066 6.68266 13.3173 3.99342 10 3.99342C6.68266 3.99342 3.99342 6.68266 3.99342 10Z" fill="#496BFF"/>
+                            <rect x="14.9385" y="5" width="2" height="14" transform="rotate(51.3811 14.9385 5)" fill="#496BFF"/>
+                            </svg> Сброс фильтра</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-list log-list">
+            <div class="table-list__head">
+                <div class="table-list__wrap">
+                    <div class="table-list__wrap-col">
+                        <button class="table-list__head-btn">№</button>
+                    </div>
+                    <div class="table-list__wrap-col">
+                        <button class="table-list__head-btn">Действие</button>
+                    </div>
+                    <div class="table-list__wrap-col">
+                        <button class="table-list__head-btn">Дата и время</button>
+                    </div>
+                    <div class="table-list__wrap-col">
+                        <button class="table-list__head-btn">IP-адрес</button>
+                    </div>
+                    <div class="table-list__wrap-col">
+                        <button class="table-list__head-btn">HTTP-клиент</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="table-list__scroll">
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+                @@include("../blocks/modules/table-list/log-list-item.html")
+            </div>
+    
+        </div>
+    </div>
+
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+</body>
+
+</html>

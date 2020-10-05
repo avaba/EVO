@@ -14,6 +14,10 @@ $pfx: "product";
         box-shadow: 0px 0px 30px 3px rgba(233, 236, 244, 0.71);
         border-color: white;
         transition: all .2s;
+
+        .#{$pfx}-btn {
+            display: flex;
+        }
     }
 
     &__img {

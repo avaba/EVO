@@ -1,0 +1,131 @@
+.range {
+    &__title {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+
+        &-col {
+            &:first-child {
+                display: flex;
+                align-items: center;
+                width: auto;
+                margin-right: 12px;
+
+                input {
+                    display: block;
+                    box-sizing: border-box;
+                    width: 62px;
+                    height: 30px;
+                    color: white;
+                    background: $range-blue;
+                    border: 0;
+                    border-radius: 6px;
+                    text-align: center;
+                    margin-right: 5px;
+
+                    &:focus {
+                        background: $accent;
+
+                        +svg {
+                            path {
+                                fill: $accent;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                flex: 1;
+            }
+        }
+    }
+
+    .noUi-target {
+        border: 0;
+        box-shadow: none;
+        background: $range-blue;
+    }
+
+    .noUi-horizontal {
+        height: 4px;
+
+        &:active {
+            background: $accent;
+
+            .noUi-handle {
+                background: $accent;
+            }
+        }
+    }
+
+    .noUi-horizontal .noUi-handle {
+        border: 0;
+        box-shadow: none;
+        background: $range-blue;
+        right: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+    }
+
+    .noUi-handle:before,
+    .noUi-handle:after {
+        display: none;
+    }
+
+    .noUi-touch-area:focus {
+        outline: 0;
+    }
+
+    .noUi-horizontal .noUi-handle:focus {
+        outline: 0;
+    }
+
+    .noUi-origin {
+        width: 9.5%;
+    }
+
+    .operation {
+        input {
+            background: $range-red;
+
+            &:focus {
+                background: $range-red-focus;
+
+                +svg {
+                    path {
+                        fill: $range-red-focus;
+                    }
+                }
+            }
+        }
+
+        .noUi-target {
+            border: 0;
+            box-shadow: none;
+            background: $range-red;
+        }
+
+        .noUi-horizontal {
+            &:active {
+                background: $range-red-focus;
+
+                .noUi-handle {
+                    background: $range-red-focus;
+                }
+            }
+        }
+
+        .noUi-horizontal .noUi-handle {
+            background: $range-red;
+        }
+    }
+}

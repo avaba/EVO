@@ -48,6 +48,7 @@ $pfx: "header";
             border: 1px solid #F9F9FF;
             width: 278px;
             padding-left: 40px;
+            color: #babdd8;
 
             &::-webkit-input-placeholder {
                 color: #babdd8;
@@ -85,7 +86,7 @@ $pfx: "header";
         background: $accent;
         border: 0;
         color: white;
-        padding: 0 30px;
+        padding: 0 35px;
         border-radius: 10px;
         display: flex;
         align-items: center;

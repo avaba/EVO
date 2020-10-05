@@ -1,0 +1,96 @@
+.select {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.new-select {
+    border: 1px solid #DAE3E4;
+    border-radius: 8px;
+    background: white;
+    height: 42px;
+    line-height: 40px;
+    padding: 0 43px 0 16px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: -8px;
+        background: url(/img/svg/select.svg);
+        background-size: cover;
+        transition: all .2s;
+    }
+
+    &.on {
+        border-radius: 8px 8px 0 0;
+
+        &:before {
+            transform: rotate(180deg);
+            transition: all .2s;
+            margin-top: -6px;
+        }
+
+    }
+
+    &__list {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        margin-top: -1px;
+        z-index: 10;
+        background: white;
+        border: 1px solid #DAE3E4;
+        border-radius: 0 0 8px 8px;
+        overflow: hidden;
+        max-height: 450px;
+        overflow: auto;
+
+        &::-webkit-scrollbar-button {
+            width: 4px;
+            height: 0px
+        }
+    
+        &::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: $border-light;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    
+        &::-webkit-resizer {
+            width: 4px;
+            height: 0px
+        }
+    
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+    }
+
+    &__item {
+        font-size: 14px;
+        padding: 9px 16px;
+        display: block;
+        cursor: pointer;
+
+        &:hover {
+            background: #F0F3FF;
+            color: $accent;
+        }
+    }
+}

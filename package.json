@@ -36,6 +36,7 @@
         "bem-tools-create": "bem-tools/bem-tools-create",
         "browser-sync": "^2.23.6",
         "del": "^5.1.0",
+        "fancybox": "^3.0.1",
         "gulp": "^4.0.0",
         "gulp-autoprefixer": "^7.0.1",
         "gulp-clean-css": "^4.2.0",
@@ -74,7 +75,9 @@
         "jquery": "^3.5.1",
         "jquery-mousewheel": "^3.1.13",
         "malihu-custom-scrollbar-plugin": "^3.1.5",
-        "smart-grid": "^2.1.2"
+        "nouislider": "^14.6.2",
+        "smart-grid": "^2.1.2",
+        "wnumb": "^1.2.0"
     },
     "husky": {
         "hooks": {

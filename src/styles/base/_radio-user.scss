@@ -1,0 +1,55 @@
+$pfx: "radio-user";
+
+.#{$pfx} {
+    display: flex;
+
+    &__block {
+        margin-right: 12px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &-input {
+            display: none;
+
+            &:checked+.#{$pfx}__block-title {
+                background: $accent;
+                color: white;
+                transition: all .2s;
+
+                svg {
+                    path {
+                        fill: white;
+                        transition: all .2s;
+                    }
+                }
+            }
+        }
+
+        &-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: #F0F3FF;
+            border-radius: 7px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            color: $accent;
+            padding: 11px 10px;
+            transition: all .2s;
+            min-width: 170px;
+
+            svg {
+                display: inline-block;
+                margin-right: 7px;
+
+                path {
+                    transition: all .2s;
+                }
+            }
+        }
+    }
+}

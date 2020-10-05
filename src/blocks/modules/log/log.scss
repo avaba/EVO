@@ -1,0 +1,41 @@
+.log {
+    padding: 0 40px;
+
+    .log-filter {
+
+        margin-bottom: 48px;
+
+        &__wrap {
+            display: flex;
+
+            &-col {
+                margin-right: 20px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .header__search {
+            margin-right: 0px;
+            input {
+                width: 232px;
+                height: 36px;
+            }
+        }
+
+        &__btn {
+            display: flex;
+
+            button {
+                margin-right: 8px;
+                padding: 7px 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,1 +1,707 @@
 </div> <!-- #site -->
+
+
+<div class="fancybox-hidden">
+    <div id="add-user" class="popupp">
+        <div class="add-user">
+            <h2 class="popupp__title">Новый пользователь</h2>
+            <form class="form">
+                <h3 class="form__h3">Кто пользователь?</h3>
+                <div class="radio-user">
+                    <label class="radio-user__block">
+                        <input class="radio-user__block-input" type="radio" name="who" value="Администратор">
+                        <span class="radio-user__block-title"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 4.125C0.75 2.46815 2.09315 1.125 3.75 1.125H14.25C15.9069 1.125 17.25 2.46815 17.25 4.125V14.625C17.25 16.2819 15.9069 17.625 14.25 17.625H3.75C2.09315 17.625 0.75 16.2819 0.75 14.625V4.125ZM9.00006 8.38499C7.90654 8.38499 7.02006 7.49852 7.02006 6.40499C7.02006 5.31147 7.90654 4.42499 9.00006 4.42499C10.0936 4.42499 10.9801 5.31147 10.9801 6.40499C10.9801 7.49852 10.0936 8.38499 9.00006 8.38499ZM8.99083 9.37503C6.39404 9.37503 4.26353 10.8764 4.05035 13.8295C4.03874 13.9904 4.31218 14.325 4.45012 14.325H13.5357C13.9488 14.325 13.9553 13.951 13.9488 13.83C13.7877 10.7939 11.6242 9.37503 8.99083 9.37503Z" fill="#496BFF" />
+                            </svg> Администратор</span>
+                    </label>
+                    <label>
+                        <input class="radio-user__block-input" type="radio" name="who" value="Пользователь">
+                        <span class="radio-user__block-title"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25C3.75 6.90686 5.09315 8.25 6.75 8.25C8.40686 8.25 9.75 6.90686 9.75 5.25C9.75 3.59315 8.40686 2.25 6.75 2.25C5.09315 2.25 3.75 3.59315 3.75 5.25ZM11.25 8.25C11.25 9.49264 12.2574 10.5 13.5 10.5C14.7426 10.5 15.75 9.49264 15.75 8.25C15.75 7.00736 14.7426 6 13.5 6C12.2574 6 11.25 7.00736 11.25 8.25Z" fill="#496BFF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73751 9.75C3.19643 9.75 0.291194 11.5699 0.000488763 15.1494C-0.0153463 15.3444 0.357534 15.75 0.545627 15.75H12.935C13.4984 15.75 13.5072 15.2966 13.4984 15.15C13.2787 11.4699 10.3284 9.75 6.73751 9.75ZM17.5919 15.75H14.6998C14.6998 14.0618 14.1421 12.5039 13.2007 11.2505C15.7557 11.2784 17.8418 12.5701 17.9988 15.3C18.0051 15.41 17.9988 15.75 17.5919 15.75Z" fill="#496BFF" />
+                            </svg> Пользователь</span>
+                    </label>
+                </div>
+                <div class="info-red">
+                    <p>Внимательно выберите уровень прав и логин.</p>
+                    <p>Логин будет изменить невозможно.</p>
+                </div>
+                <div class="add-user__wrap">
+                    <div class="add-user__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Фамилия</span>
+                                <input name="" type="text" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Имя</span>
+                                <input name="" type="text" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Отчество</span>
+                                <input name="" type="text" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Логин</span>
+                                <input name="" type="text" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Пароль</span>
+                                <input name="" type="text" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Повтор пароля</span>
+                                <input name="" type="text" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Телефон</span>
+                                <input name="" type="tel" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">E-mail</span>
+                                <input name="" type="email" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Комментарий</span>
+                                <input name="" type="text" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-user__wrap" style="display: none;">
+                    <div class="add-user__wrap-col">
+                        <div class="form-input success">
+                            <label>
+                                <span class="form-input__label">Фамилия</span>
+                                <input name="" value="Кардашевский" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input success">
+                            <label>
+                                <span class="form-input__label">Имя</span>
+                                <input name="" value="Аркадий" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input success">
+                            <label>
+                                <span class="form-input__label">Отчество</span>
+                                <input name="" value="Андреевич" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input success">
+                            <label>
+                                <span class="form-input__label">Логин</span>
+                                <input name="" value="karandash123" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input success">
+                            <label>
+                                <span class="form-input__label">Пароль</span>
+                                <input name="" value="ajar2481fd" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input success">
+                            <label>
+                                <span class="form-input__label">Повтор пароля</span>
+                                <input name="" value="ajar2481fd" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input success">
+                            <label>
+                                <span class="form-input__label">Телефон</span>
+                                <input name="" value="88005553535" type="tel" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input success">
+                            <label>
+                                <span class="form-input__label">E-mail</span>
+                                <input name="" value="ivanivanov@yandex.ru" type="email" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input success">
+                            <label>
+                                <span class="form-input__label">Комментарий</span>
+                                <input name="" value="Изменить пороговые значения устройства" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-user__wrap" style="display: none;">
+                    <div class="add-user__wrap-col">
+                        <div class="form-input error">
+                            <label>
+                                <span class="form-input__label">Фамилия</span>
+                                <input name="" value="Кардашевский" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input error">
+                            <label>
+                                <span class="form-input__label">Имя</span>
+                                <input name="" value="Аркадий" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input error">
+                            <label>
+                                <span class="form-input__label">Отчество</span>
+                                <input name="" value="Андреевич" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input error">
+                            <label>
+                                <span class="form-input__label">Логин</span>
+                                <input name="" value="karandash123" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input error">
+                            <label>
+                                <span class="form-input__label">Пароль</span>
+                                <input name="" value="ajar2481fd" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input error">
+                            <label>
+                                <span class="form-input__label">Повтор пароля</span>
+                                <input name="" value="ajar2481fd" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input error">
+                            <label>
+                                <span class="form-input__label">Телефон</span>
+                                <input name="" value="88005553535" type="tel" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input error">
+                            <label>
+                                <span class="form-input__label">E-mail</span>
+                                <input name="" value="ivanivanov@yandex.ru" type="email" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-user__wrap-col">
+                        <div class="form-input error">
+                            <label>
+                                <span class="form-input__label">Комментарий</span>
+                                <input name="" value="Изменить пороговые значения устройства" type="text" autocomplete="off">
+                                <span class="valid"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-bot">
+                    <span class="close-popupp btn-bot__close">Закрыть</span>
+                    <button class="close-popupp btn-bot__btn"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M9.16667 18.3333C14.2293 18.3333 18.3333 14.2293 18.3333 9.16667C18.3333 4.10406 14.2293 0 9.16667 0C4.10406 0 0 4.10406 0 9.16667C0 14.2293 4.10406 18.3333 9.16667 18.3333Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0832 4.58268C10.0832 4.07642 9.67276 3.66602 9.1665 3.66602C8.66024 3.66602 8.24983 4.07642 8.24983 4.58268V8.24934H4.58317C4.07691 8.24934 3.6665 8.65974 3.6665 9.166C3.6665 9.67226 4.07691 10.0827 4.58317 10.0827H8.24983V13.7493C8.24983 14.2556 8.66024 14.666 9.1665 14.666C9.67276 14.666 10.0832 14.2556 10.0832 13.7493V10.0827H13.7498C14.2561 10.0827 14.6665 9.67226 14.6665 9.166C14.6665 8.65974 14.2561 8.24934 13.7498 8.24934H10.0832V4.58268Z" fill="white" />
+                        </svg> Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="fancybox-hidden">
+    <div id="add-device" class="popupp">
+        <div class="add-device">
+            <h2 class="popupp__title">Новое устройство</h2>
+            <form class="form">
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Название уст-ва</span>
+                        <input name="" type="text" autocomplete="off">
+                        <span class="form-alert">Например: "Рамка возле входа в банк"</span>
+                    </label>
+                </div>
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">ID устройства</span>
+                        <input name="" type="text" autocomplete="off">
+                        <span class="form-alert">Формат: 0022002E3336510332343336</span>
+                    </label>
+                </div>
+                <div class="form-input error" style="display: none;">
+                    <label>
+                        <span class="form-input__label">ID устройства</span>
+                        <input name="" type="text" autocomplete="off" value="0022002E3336510332343336">
+                        <span class="form-alert">Неверный ID. Проверьте раскладку и символы</span>
+                        <span class="valid"></span>
+                    </label>
+                </div>
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Адрес</span>
+                        <input name="" type="text" autocomplete="off">
+                        <span class="form-alert">Формат: страна, регион, город, улица, дом</span>
+                    </label>
+                </div>
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Комментарий</span>
+                        <input name="" type="text" autocomplete="off">
+                        <span class="form-alert">Ваши заметки. Поле опционально.</span>
+                    </label>
+                </div>
+                @@include("../product/bg-card.html")
+                <div class="btn-bot">
+                    <span class="close-popupp btn-bot__close">Закрыть</span>
+                    <button class="close-popupp btn-bot__btn"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M9.16667 18.3333C14.2293 18.3333 18.3333 14.2293 18.3333 9.16667C18.3333 4.10406 14.2293 0 9.16667 0C4.10406 0 0 4.10406 0 9.16667C0 14.2293 4.10406 18.3333 9.16667 18.3333Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0832 4.58268C10.0832 4.07642 9.67276 3.66602 9.1665 3.66602C8.66024 3.66602 8.24983 4.07642 8.24983 4.58268V8.24934H4.58317C4.07691 8.24934 3.6665 8.65974 3.6665 9.166C3.6665 9.67226 4.07691 10.0827 4.58317 10.0827H8.24983V13.7493C8.24983 14.2556 8.66024 14.666 9.1665 14.666C9.67276 14.666 10.0832 14.2556 10.0832 13.7493V10.0827H13.7498C14.2561 10.0827 14.6665 9.67226 14.6665 9.166C14.6665 8.65974 14.2561 8.24934 13.7498 8.24934H10.0832V4.58268Z" fill="white" />
+                        </svg> Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal-in">
+    <div class="modal-in__owerlay"></div>
+    <div id="form-autor" class="modal-in__wrap">
+        <div title="Закрыть" class="close-popupp fancybox-item fancybox-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="17.599" height="2.19987" rx="1.09994" transform="matrix(0.707127 -0.707087 0.707127 0.707087 5 17.4434)" fill="#2F3357"></rect>
+                <rect width="17.599" height="2.19987" rx="1.09994" transform="matrix(0.707127 0.707087 -0.707127 0.707087 6.55518 5)" fill="#2F3357"></rect>
+            </svg>
+        </div>
+        <h2 class="popupp__title">Изменить данные</h2>
+        <form class="form form-autor">
+            <div class="avatar">
+                <label class="avatar__upload">
+                    <img class="avatar__upload-img" id="image" src="#" alt="" />
+                    <span class="avatar__upload-bg">
+                        <input type="file" name="pic[]" class="photo" id="imgInput" />
+                    </span>
+                </label>
+                <div class="header__user_text">
+                    <span class="header__user_text-name">Вениамин</span>
+                    <span class="header__user_text-prof">Администратор</span>
+                </div>
+            </div>
+            <div class="radio-user">
+                <label class="radio-user__block">
+                    <input class="radio-user__block-input" type="radio" name="who" value="Администратор" checked>
+                    <span class="radio-user__block-title"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 4.125C0.75 2.46815 2.09315 1.125 3.75 1.125H14.25C15.9069 1.125 17.25 2.46815 17.25 4.125V14.625C17.25 16.2819 15.9069 17.625 14.25 17.625H3.75C2.09315 17.625 0.75 16.2819 0.75 14.625V4.125ZM9.00006 8.38499C7.90654 8.38499 7.02006 7.49852 7.02006 6.40499C7.02006 5.31147 7.90654 4.42499 9.00006 4.42499C10.0936 4.42499 10.9801 5.31147 10.9801 6.40499C10.9801 7.49852 10.0936 8.38499 9.00006 8.38499ZM8.99083 9.37503C6.39404 9.37503 4.26353 10.8764 4.05035 13.8295C4.03874 13.9904 4.31218 14.325 4.45012 14.325H13.5357C13.9488 14.325 13.9553 13.951 13.9488 13.83C13.7877 10.7939 11.6242 9.37503 8.99083 9.37503Z" fill="#496BFF" />
+                        </svg> Администратор</span>
+                </label>
+                <label>
+                    <input class="radio-user__block-input" type="radio" name="who" value="Пользователь">
+                    <span class="radio-user__block-title"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25C3.75 6.90686 5.09315 8.25 6.75 8.25C8.40686 8.25 9.75 6.90686 9.75 5.25C9.75 3.59315 8.40686 2.25 6.75 2.25C5.09315 2.25 3.75 3.59315 3.75 5.25ZM11.25 8.25C11.25 9.49264 12.2574 10.5 13.5 10.5C14.7426 10.5 15.75 9.49264 15.75 8.25C15.75 7.00736 14.7426 6 13.5 6C12.2574 6 11.25 7.00736 11.25 8.25Z" fill="#496BFF" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73751 9.75C3.19643 9.75 0.291194 11.5699 0.000488763 15.1494C-0.0153463 15.3444 0.357534 15.75 0.545627 15.75H12.935C13.4984 15.75 13.5072 15.2966 13.4984 15.15C13.2787 11.4699 10.3284 9.75 6.73751 9.75ZM17.5919 15.75H14.6998C14.6998 14.0618 14.1421 12.5039 13.2007 11.2505C15.7557 11.2784 17.8418 12.5701 17.9988 15.3C18.0051 15.41 17.9988 15.75 17.5919 15.75Z" fill="#496BFF" />
+                        </svg> Пользователь</span>
+                </label>
+            </div>
+            <div class="form-autor__fio">
+                <h3 class="form__h3">ФИО</h3>
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Фамилия</span>
+                        <input name="" type="text" autocomplete="off">
+                    </label>
+                </div>
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Имя</span>
+                        <input name="" type="text" autocomplete="off">
+                    </label>
+                </div>
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Отчество</span>
+                        <input name="" type="text" autocomplete="off">
+                    </label>
+                </div>
+            </div>
+            <div class="form-autor__con">
+                <h3 class="form__h3">E-mail и телефон</h3>
+                <div class="form-autor__wrap">
+                    <div class="form-autor__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Телефон</span>
+                                <input name="" type="tel" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-autor__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">E-mail</span>
+                                <input name="" type="email" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-autor__pass">
+                <h3 class="form__h3">Пароль</h3>
+                <div class="form-autor__wrap">
+                    <div class="form-autor__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Новый пароль</span>
+                                <input name="" type="text" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-autor__wrap-col">
+                        <div class="form-input">
+                            <label>
+                                <span class="form-input__label">Повтор пароля</span>
+                                <input name="" type="text" autocomplete="off">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-bot">
+                <span class="close-popupp btn-bot__close">Закрыть</span>
+                <button class="close-popupp btn-bot__btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4H7V11H17V4L19.8536 6.85355C19.9473 6.94732 20 7.0745 20 7.20711V18C20 19.3 19.2 20 18 20H6C4.79111 20 4 19.3 4 18V6C4 4.7 4.79111 4 6 4Z" fill="white" />
+                        <rect opacity="0.5" x="12" y="4" width="3" height="5" rx="0.5" fill="white" />
+                    </svg> Сохранить</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="form-setting" class="modal-in__wrap">
+        <div title="Закрыть" class="close-popupp fancybox-item fancybox-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="17.599" height="2.19987" rx="1.09994" transform="matrix(0.707127 -0.707087 0.707127 0.707087 5 17.4434)" fill="#2F3357"></rect>
+                <rect width="17.599" height="2.19987" rx="1.09994" transform="matrix(0.707127 0.707087 -0.707127 0.707087 6.55518 5)" fill="#2F3357"></rect>
+            </svg>
+        </div>
+        <h2 class="popupp__title">Настройки</h2>
+        <form class="form form-setting">
+            <h3 class="form__h3">Общие настройки</h3>
+
+            <div class="form-setting__top">
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Название уст-ва</span>
+                        <input name="" type="text" autocomplete="off">
+                    </label>
+                </div>
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Адрес</span>
+                        <input name="" type="text" autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Комментарий</span>
+                        <input name="" type="text" autocomplete="off">
+                    </label>
+                </div>
+
+                @@include("../product/bg-card.html")
+            </div>
+
+            <h3 class="form__h3">Настройки тепловизора</h3>
+
+            <div class="form-setting__port">
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Порт</span>
+                        <input name="" type="text" autocomplete="off">
+                    </label>
+                </div>
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Скорость порта</span>
+                        <input name="" type="text" autocomplete="off">
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-setting__bit">
+                <div class="form-setting__bit-col">
+                    <div class="form-input">
+                        <label>
+                            <span class="form-input__label">Бит</span>
+                            <input name="" type="text" autocomplete="off">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-setting__bit-col">
+                    <div class="form-input">
+                        <label>
+                            <span class="form-input__label">Стоп. бит</span>
+                            <input name="" type="text" autocomplete="off">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-setting__bit-col">
+                    <div class="form-input">
+                        <label>
+                            <span class="form-input__label">Чётность</span>
+                            <input name="" type="text" autocomplete="off">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="form__h3">Настройки камеры</h3>
+
+            <div class="form-setting__camera">
+                <div class="form-input">
+                    <label>
+                        <span class="form-input__label">Адрес RTSP потока</span>
+                        <input name="" type="text" autocomplete="off">
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-setting__porog">
+                <h3 class="form__h3">Настройки порогов</h3>
+                @@include("../range/range.html")
+            </div>
+
+            <div class="btn-bot">
+                <span class="close-popupp btn-bot__close">Закрыть</span>
+                <button class="close-popupp btn-bot__btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4H7V11H17V4L19.8536 6.85355C19.9473 6.94732 20 7.0745 20 7.20711V18C20 19.3 19.2 20 18 20H6C4.79111 20 4 19.3 4 18V6C4 4.7 4.79111 4 6 4Z" fill="white" />
+                        <rect opacity="0.5" x="12" y="4" width="3" height="5" rx="0.5" fill="white" />
+                    </svg> Сохранить</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="form-user" class="modal-in__wrap">
+        <div title="Закрыть" class="close-popupp fancybox-item fancybox-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="17.599" height="2.19987" rx="1.09994" transform="matrix(0.707127 -0.707087 0.707127 0.707087 5 17.4434)" fill="#2F3357"></rect>
+                <rect width="17.599" height="2.19987" rx="1.09994" transform="matrix(0.707127 0.707087 -0.707127 0.707087 6.55518 5)" fill="#2F3357"></rect>
+            </svg>
+        </div>
+        <h2 class="popupp__title">Добавить пользователя</h2>
+        <form class="form form-user">
+            <h3 class="form__h3">Выберите рамку</h3>
+
+            <div class="select-frame">
+                <select class="select" name="language">
+                    <option disabled>Название рамки</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                </select>
+            </div>
+
+            <h3 class="form__h3">Выберите владельцев рамки</h3>
+
+            <div class="owner">
+                <div class="table-list__head owner__head">
+                    <button type="button" class="table-list__head-btn">Имя</button>
+                    <button type="button" class="table-list__head-btn">Статус</button>
+                </div>
+                <div class="owner__list">
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-user">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                    <label class="owner__items">
+                        <input type="checkbox">
+                        <span class="owner__items-item checkbox-admin">Кардашевский Вениамин Вениаминович <span class="check"></span></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="btn-bot">
+                <span class="close-popupp btn-bot__close">Закрыть</span>
+                <button class="close-popupp btn-bot__btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4H7V11H17V4L19.8536 6.85355C19.9473 6.94732 20 7.0745 20 7.20711V18C20 19.3 19.2 20 18 20H6C4.79111 20 4 19.3 4 18V6C4 4.7 4.79111 4 6 4Z" fill="white" />
+                        <rect opacity="0.5" x="12" y="4" width="3" height="5" rx="0.5" fill="white" />
+                    </svg> Сохранить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="fancybox-hidden">
+    <div id="action" class="popupp action">
+        <h3 class="action__title">Выполнить действие?</h3>
+        <div class="action__wrap">
+            <button class="btn-white close-popupp">Нет</button>
+            <button class="btn">Да</button>
+        </div>
+    </div>
+</div>

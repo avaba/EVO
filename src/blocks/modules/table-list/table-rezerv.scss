@@ -1,0 +1,56 @@
+.rezerv {
+    padding: 0 40px;
+
+    &__wrap {
+        display: flex;
+
+        &-col {
+            &:first-child {
+                width: 222px;
+                margin-right: 37px;
+            }
+
+            &:last-child {
+                flex: 1;
+            }
+        }
+    }
+
+    &__banner {
+        background: $accent;
+        border-radius: 9px;
+        color: white;
+        padding: 32px 29px;
+        font-size: 14px;
+
+        p {
+            margin: 0;
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 24px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 17px !important;
+
+            &:after {
+                content: '';
+                position: relative;
+                width: 44px;
+                height: 25px;
+                background: url(/img/rezerv.svg);
+                display: inline-block;
+                margin-left: 15px;
+            }
+        }
+
+        &-subtitle {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            margin-bottom: 15px !important;
+        }
+    }
+}

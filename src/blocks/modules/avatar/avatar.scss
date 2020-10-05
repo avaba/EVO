@@ -1,0 +1,57 @@
+$pfx: "avatar";
+
+.#{$pfx} {
+    display: flex;
+    align-items: center;
+    
+    &__upload {
+        width: 48px;
+        height: 48px;
+        background: #F0F3FF;
+        border-radius: 7px;
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+
+        &-img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(/img/svg/user.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            z-index: 1;
+
+            &:hover {
+                background-image: url(/img/svg/camera.svg);
+            }
+
+            &.active {
+                background-image: none;
+                transition: all .2s;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.42);
+                    background-image: url(/img/svg/camera-white.svg);
+                    transition: all .2s;
+                }
+            }
+
+            input {
+                display: none;
+            }
+        }
+    }
+}

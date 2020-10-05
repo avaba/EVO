@@ -1,3 +1,7 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Gilroy';
     font-size: 15px;
@@ -30,12 +34,16 @@ a {
 }
 
 input {
+    font-family: 'Gilroy';
+
     &:focus {
         outline: 0;
     }
 }
 
 button {
+    font-family: 'Gilroy';
+
     &:focus {
         outline: 0;
     }
@@ -121,3 +129,4 @@ button {
 .mCSB_scrollTools.mCSB_scrollTools_horizontal {
     right: 40px !important;
 }
+

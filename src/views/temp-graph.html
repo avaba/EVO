@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    @@include("../blocks/modules/header/header.html")
+    <div class="head-page">
+        <div class="head-page__title">
+            <h1>Температура и снимки</h1>
+        </div>
+        <div class="head-page__btn">
+            <div class="head-page__btn-col">
+                @@include("../blocks/modules/btn-group/btn-group-temp.html")
+            </div>
+            <div class="head-page__btn-col">
+                @@include("../blocks/modules/export/export.html")
+            </div>
+        </div>
+    </div>
+
+    <div class="tab">
+        <div class="tab__nav">
+            <span class="tab__nav-title">Показать за</span>
+            <button class="btn-white tab__nav-item">1 сутки</button>
+            <button class="btn-white tab__nav-item active">3 суток</button>
+            <button class="btn-white tab__nav-item">7 суток</button>
+        </div>
+
+        <div class="tab__wrap">
+            <div class="tab__wrap-col">
+                <img src="/img/graph.png" alt="">
+            </div>
+            <div class="tab__wrap-col">
+                <div class="graph-info">
+                    <div class="graph-info__wrap">
+                        <div class="graph-info__wrap-col">
+                            <img src="../img/temp-img.png" alt="">
+                        </div>
+                        <div class="graph-info__wrap-col">
+                                <p class="graph-info__temp blue red">39.6°С</p>
+                                <p class="graph-info__data">26.08.2020 17:36:09</p>
+                        </div>
+                    </div>
+                    <div class="form-setting__porog">
+                        <h3 class="form__h3">Настройки порогов</h3>
+                        @@include("../blocks/modules/range/range.html")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+</body>
+
+</html>

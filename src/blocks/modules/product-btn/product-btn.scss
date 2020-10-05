@@ -1,0 +1,45 @@
+$pfx: "product-btn";
+
+.#{$pfx} {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    display: none;
+
+    &__item {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: 0;
+        border-radius: 4px;
+        background: white;
+
+        svg {
+            display: block;
+        }
+
+        &:hover {
+            background: #F0F3FF;
+
+            svg {
+                path, rect {
+                    fill: $hover;
+                }
+            }
+        }
+
+        &:active {
+            background: #F0F3FF;
+
+            svg {
+                path, rect {
+                    fill: $press;
+                }
+            }
+        }
+    }
+}

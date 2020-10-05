@@ -8,5 +8,13 @@
 @import "base/form-button";
 @import "base/form-checkbox";
 @import "base/box-hide";
-@import "../blocks/modules";
+@import "base/btn";
+@import "base/modal";
+@import "base/form";
+@import "base/radio-user";
+@import "base/tab";
+@import "base/select";
+@import "base/owner";
 @import "../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar";
+@import "../../node_modules/nouislider/distribute/nouislider";
+@import "../blocks/modules";

@@ -1,0 +1,200 @@
+.fancybox-overlay {
+    background: rgba(112, 116, 117, 0.2);
+}
+
+.fancybox-opened .fancybox-skin {
+    box-shadow: 0px 0px 14px rgba(68, 68, 102, 0.16);
+}
+
+.fancybox-skin {
+    border-radius: 17px;
+    background: white;
+}
+
+.fancybox-close {
+    width: 24px;
+    height: 24px;
+    background: none;
+    top: 39px;
+    right: 46px;
+
+    &:hover {
+        svg {
+            rect {
+                fill: $hover;
+            }
+        }
+    }
+
+    &:active {
+        svg {
+            rect {
+                fill: $press;
+            }
+        }
+    }
+}
+
+.fancybox-inner {
+    &::-webkit-scrollbar-button {
+        width: 4px;
+        height: 0px
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: $border-light;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &::-webkit-resizer {
+        width: 4px;
+        height: 0px
+    }
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+}
+
+.popupp {
+    display: none;
+    color: $text;
+
+    &__title {
+        letter-spacing: 0.03em;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        padding-right: 22px;
+        margin-bottom: 22px;
+    }
+}
+
+.add-device {
+    width: 323px;
+    max-width: 100%;
+}
+
+.modal-in {
+    position: fixed;
+    left: -1000%;
+    top: 0;
+    right: 1000%;
+    bottom: 0;
+    z-index: 999;
+
+    &__owerlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transition: all .3s;
+        opacity: 0;
+        background: rgba(112, 116, 117, 0.2);
+    }
+
+    &__wrap {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        width: 481px;
+        background: #fff;
+        border-radius: 20px 0px 0px 0px;
+        padding: 45px 48px 90px 48px;
+        overflow: hidden;
+        transition: all .3s;
+
+        .form {
+            overflow: auto;
+            height: 100%;
+
+            &::-webkit-scrollbar-button {
+                display: none;
+            }
+
+            &::-webkit-scrollbar-track {
+                display: none;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                display: none;
+            }
+
+            &::-webkit-resizer {
+                display: none;
+            }
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .fancybox-close {
+            top: 51px;
+            right: 48px;
+        }
+    }
+
+    &.open {
+        left: 0;
+        right: 0;
+
+        .modal-in__owerlay {
+            transition: all .3s;
+            opacity: 1;
+        }
+
+        .modal-in__wrap.active {
+            right: 0;
+            transition: all .3s;
+        }
+    }
+}
+
+.action {
+    width: 270px;
+    max-width: 100%;
+    padding: 17px 45px;
+    
+    &__title {
+        white-space: nowrap;
+        text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+        button {
+            min-width: 110px;
+            margin-right: 12px;
+            box-sizing: border-box;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.fancybox-skin.fancybox-content-cust {
+    border-radius: 12px;
+}
+
