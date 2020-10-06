@@ -19,6 +19,7 @@
 
         .header__search {
             margin-right: 0px;
+
             input {
                 width: 232px;
                 height: 36px;
@@ -30,7 +31,10 @@
 
             button {
                 margin-right: 8px;
-                padding: 7px 30px;
+                padding: 7px 10px;
+                min-width: 155px;
+                text-align: center;
+                font-size: 14px;
 
                 &:last-child {
                     margin-right: 0;
